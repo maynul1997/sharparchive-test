@@ -13,4 +13,12 @@ test('Valid Signup test', async t=>{
     await t.typeText("#email", "maynul.123@gmail.com");
     await t.typeText("#password", "Mynul123456@");
     await t.typeText("#business_name", "I Team");
+    await t.click("#selectStyleId", "");
 })
+
+test(`Select an option from the drop-down menu`, async t => {
+    await t
+        .click(select)
+        .click(selectStyleId.withText('Education'))
+        
+});
