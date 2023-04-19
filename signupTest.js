@@ -6,7 +6,7 @@ fixture`Getting Started`
 test('Valid Signup test', async t=>{
     await t
     .setNativeDialogHandler(() => true)
-    .click(Selector("button").withText("Sign Up"));
+    .click(Selector("span").withText("Sign Up"));
     await t.debug();
 
 })
