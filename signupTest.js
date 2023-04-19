@@ -8,5 +8,6 @@ test('Valid Signup test', async t=>{
     .setNativeDialogHandler(() => true)
     .click(Selector("span").withText("Sign Up"));
     await t.debug();
+    
 
 })
