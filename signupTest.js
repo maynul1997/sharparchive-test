@@ -9,5 +9,5 @@ test('Valid Signup test', async t=>{
     .click(Selector("span").withText("Sign Up"));
     
     await t.typeText("#first_name", "Md");
-
+    await t.typeText("#last_name", "Maynuddin");
 })
