@@ -10,4 +10,5 @@ test('Valid Signup test', async t=>{
     
     await t.typeText("#first_name", "Md");
     await t.typeText("#last_name", "Maynuddin");
+    await t.typeText("#email", "maynul.123@gmail.com");
 })
